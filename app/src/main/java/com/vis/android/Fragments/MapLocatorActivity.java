@@ -2090,6 +2090,7 @@ public class MapLocatorActivity extends BaseFragment implements View.OnClickList
 
         String url = Utils.getCompleteApiUrl(mActivity, R.string.post_locator);
         Log.v("Hit_PostMedia_Api", url);
+        Log.e("url>>>",url);
 
         JSONObject jsonObject = new JSONObject();
         JSONObject json_data = new JSONObject();

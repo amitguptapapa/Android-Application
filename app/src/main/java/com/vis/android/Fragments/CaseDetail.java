@@ -1051,13 +1051,13 @@ public class CaseDetail extends BaseFragment implements View.OnClickListener {
                 pref.set(Constants.co_name, etCoordinatingPerson.getText().toString());
                 pref.commit();
                 setDefaultSurvey();
-                Log.e("click12>>>>","click");
+                Log.e("click12>>>>","click1");
                 if (schedule_status.equalsIgnoreCase("not_schedule_yet")) {
-                    Log.e("click12>>>>","click");
+                    Log.e("click12>>>>","click2");
                     ((Dashboard) mActivity).displayView(2);
                 } else {
                     ((Dashboard) mActivity).displayView(3);
-                    Log.e("click13>>>>","click");
+                    Log.e("click13>>>>","click3");
                 }
 
 
