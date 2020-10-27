@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.vis.android.Activities.SpecialAssets.SpecialAssets6">
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:background="@color/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Special Asset Survey Form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/rr_header"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:onClick="hideKeyboard"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="1. Demand &amp; Supply condition in the Market for such  properties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rgDemandSupply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Very Good"
+                        />
+                    <RadioButton
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good"
+
+                        />
+                    <RadioButton
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average"
+
+                        />
+                    <RadioButton
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="2. At what True rate Owner bought this Property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2.1. Year of purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etYearOfPurchase"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2.2. Purchase Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etPurchasePrice"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="3. Minimum Rate in the locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etMinimunRate"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="4. Maximum Rate in the locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etMaximumRate"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="5. Local Information gathered during Site survey (Minimum 2 enquiries are must):"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5.1. Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etName1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Contact No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etContactNumber1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Sale Purchase Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etSalePurchase1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Rental Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etRentalRate1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etComments1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5.2. Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etName2"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Contact No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etContactNumber2"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Sale Purchase Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etSalePurchase2"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Rental Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etRentalRate2"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etComments2"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5.3. Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etName3"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Contact No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etContactNumber3"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Sale Purchase Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etSalePurchase3"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Rental Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etRentalRate3"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/etComments3"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/footer"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@color/grey_bg"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:text="PREVIOUS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:id="@+id/next"
+            android:background="@color/grey"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:text="NEXT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main"
+    android:focusableInTouchMode="true"
+    tools:context="com.vis.android.Activities.OtherThanFlats.Other5">
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:background="@color/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+    </RelativeLayout>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/rr_header"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:onClick="hideKeyboard"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="17. Water arrangements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_water1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jet pump"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_water2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submersible"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_water3"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jal board supply"
+
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="18. Fixed Wooden Work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/rg_woodenwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Excellent"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Very Good"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork3"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork4"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simple"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork5"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ordinary"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork6"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork7"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Below Average"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork8"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No wooden work"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_woodenwork9"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No survey"
+                        />
+
+                </RadioGroup>
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="19. Age of Building/ Recent Improvements done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_bAge"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="284dp"
+                        android:gravity="center"
+                        android:text="Property Other Than Flats"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="20. Maintenance of the Building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_bMaintenence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_maintenence1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Excellent"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_maintenence2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rb_maintenence3"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poor"
+                        />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="21. Any defects in the building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/cb_defectes1"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintenance issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes2"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finishing issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes3"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seepage issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes4"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water supply issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes5"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electricity issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes6"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Structural issues"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_defectes7"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visible cracks in the building"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="22. Any violation done in the property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/cb_vio1"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Construction done without Map"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_vio2"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Construction not as per approved Map"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_vio3"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extra covered without sanctioned Map"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_vio4"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joined adjacent property"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_vio5"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encroached adjacent area illegally"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="23. Boundary Wall (Only for individual property)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rg_bWall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_bWall1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_bWall2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_bWall3"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Common boundary wall of a complex"
+
+                        />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="23.1. Running Mtr."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_rMtr"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="23.2. Height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_height"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="23.3. Width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_width"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="23.4. Finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_finish"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="24. Lift/ elevators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_lifts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_lifts1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passenger"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_lifts2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Commercial"
+                        />
+
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="24.1. Make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_make"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="24.2. Capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_capacity"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="25. Power backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_backup1"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inverter"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_backup2"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DG Set"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="25.1. Make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_makee"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="25.2. Capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/et_capacityy"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="26. Garden/ Landscaping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_garden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_garden1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_garden2"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_garden3"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beautiful"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_garden4"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ordinary"
+                        />
+                </RadioGroup>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="27. Parking facilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/cb_facility1"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available_within_the_property"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility2"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Ground"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility3"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Basement"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility4"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On stilt"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility5"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not available within the"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility6"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On road"
+                    />
+                <CheckBox
+                    android:id="@+id/cb_facility7"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acute parking problem"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="28. Special Comments if any"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:textSize="@dimen/_12sdp"
+                        android:id="@+id/sCommnets"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/grey_bg"
+            android:gravity="center"
+            android:text="PREVIOUS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

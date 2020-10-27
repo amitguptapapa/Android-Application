@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/app_header">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Here"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rlCross"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:srcCompat="@drawable/ic_cancel"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2" android:layout_width="match_parent">
+            <Button
+                android:visibility="gone"
+                android:layout_height="50dp" android:layout_weight=".20"
+                android:text="Cancel" android:layout_width="0dp" android:id="@+id/cancel" />
+            <ImageView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_refresh_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:id="@+id/clear" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="@dimen/_150sdp"
+            android:id="@+id/linearLayout" android:layout_width="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color"/>
+        <Button
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:background="@color/app_header"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Done"
+            android:layout_width="@dimen/_80sdp"
+            android:id="@+id/getsign" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vis.android.Activities.Generalform2">
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:background="@color/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp" />
+        </RelativeLayout>
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="General Survey Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/rr_header"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="CASE DETAILS"
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="1. Type of Property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2. Owner/ Applicant Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2.1. Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2.2. Contact Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="2.3. Email Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="3. Account Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="4. Property Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5. Who will coordinate on site for the site survey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5.1. Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="5.2. Contact Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="6. Preferred time of survey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="6.1. Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="6.2. Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="7. Documents Received (Any one ownership document and approved site plan/ map is must)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="7.1. Ownership Documents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale Deed"
+
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power of Attorney"
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Will Relinquishment Deed"
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Deed"
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conveyance Deed"
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allotment Letter"
+                    />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Possession Letter"
+                    />
+                <CheckBox
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agreement to Sell"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="7.2. Map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cizra Map"
+
+                    />
+
+                <CheckBox
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Map"
+                    />
+
+                <CheckBox
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site Plan"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="8. Special Instructions if any"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <EditText
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/agreeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+
+                    android:textSize="@dimen/_12sdp"
+                    android:theme="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

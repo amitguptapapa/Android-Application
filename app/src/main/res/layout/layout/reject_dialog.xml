@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rl_header"
+    android:background="@color/app_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp">
+    <ImageView
+        android:id="@+id/iv_close"
+        android:src="@mipmap/white_cancel"
+        android:padding="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp" />
+    <TextView
+        android:id="@+id/tv_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Cancellation Reasons"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                  android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <RadioButton
+                        android:id="@+id/rb_one"
+                        android:text="Reason 1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:text="Reason 2"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:id="@+id/rb_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:text="Reason 3"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:id="@+id/rb_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:text="Reason 4"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:id="@+id/rb_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_below="@+id/radiogroup"
+                    android:background="@color/light_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/view">
+
+                    <TextView
+                        android:id="@+id/tv_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:gravity="center"
+                        android:text="SUBMIT"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

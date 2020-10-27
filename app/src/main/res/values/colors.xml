@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="question_progress">#14395A</color>
+    <color name="transparent">#00000000</color>
+    <color name="progressgrey">#C1C1C1</color>
+    <color name="mustard">#E2AA0E</color>
+    <color name="circle_colour">#3c748c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_pink">#FCE4EC</color>
+    <color name="greenn">#26c281</color>
+    <color name="header_colour">#ec3437</color>
+    <color name="dark_green">#1ea91e</color>
+    <color name="trans_white">#88FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="greyy">#727272</color>
+    <color name="popup_black">#302c2c</color>
+    <color name="light_black">#4b4a4a</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="heading_gray">#6e6c6c</color>
+    <color name="text_colour">#343434</color>
+    <color name="side_menu_text_colour">#e6e4e4</color>
+    <color name="grey">#edecec</color>
+    <color name="grey_bg">#c4c1c1</color>
+    <color name="dark_grey">#616161</color>
+    <color name="view_colour">#959595</color>
+    <color name="greyLight">#e8e8e8</color>
+    <color name="purple">#7736cc</color>
+    <color name="normal_text_Color">#3c3b3b</color>
+    <color name="red">#f50000</color>
+    <color name="light_red">#FF5252</color>
+    <color name="popup_bg_color">#ebebeb</color>
+    <color name="green">#95D37C</color>
+    <color name="sky_blue">#4794be</color>
+    <color name="blue_view">#1565C0</color>
+    <color name="app_theme">#3F51B5</color>
+    <color name="btn_color">#841a30</color>
+    <color name="app_header_old">#66bda3</color>
+   <!-- <color name="app_header">#35969a</color>-->
+    <color name="app_header">#39539e</color>
+    <color name="txt_color">#4b4b4b</color>
+    <color name="text_color">#429d54</color>
+    <color name="black_trans">#99000000</color>
+    <color name="accept">#359f07</color>
+    <color name="reject">#c91414</color>
+    <color name="save">#354264</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="greyLine">#636363</color>
+    <color name="blueMapLine">#07B4FA</color>
+
+    <color name="yellowStart">#40FFE53B</color>
+
+</resources>

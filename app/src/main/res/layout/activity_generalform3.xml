@@ -1,0 +1,2282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vis.android.Activities.General.Fragments.GeneralForm3">
+
+<!--
+    <include
+        android:id="@+id/rr_header"
+        layout="@layout/form_header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp" />
+-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/rr_header"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="3. Location Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_postal_address_of_the_property"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <EditText
+                        android:id="@+id/etPostalAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/b_confirm_the_landmark_from_property_owner"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <AutoCompleteTextView
+                            android:id="@+id/etConfirmLandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAutocomplete"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/etConfirmLandmark"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:visibility="gone">
+                        </android.support.v7.widget.RecyclerView>
+                        <fragment
+                            android:id="@+id/mapFrag"
+                            android:name="com.vis.android.Extras.MySupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_190sdp"
+                            android:layout_marginTop="@dimen/_5sdp" />
+                        <TextView
+                            android:id="@+id/tv_MapDistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:text="Distance ="
+                            android:layout_marginTop="@dimen/_15sdp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c_ward_name_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <EditText
+                        android:id="@+id/etWardName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d_tehsil_block_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <EditText
+                        android:id="@+id/etTehsil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_main_road_name_amp_width"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i. Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etMainRoadName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ii. Width (mtr.)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etMainRoadWidth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="iii. Distance from the property (Km)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etDistanceFromProp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_platenotdisplayed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="iv. Photograph of the Road"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <TextView
+                            android:id="@+id/tv_camera1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_camera1"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_camera1"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_camera" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/ivCameraCapture1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTypeOfAppr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/f_type_of_approach_road"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeofApproach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/ivTypeofApproach"
+                        android:background="@null"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/ivTypeofApproach"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@mipmap/down" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_approach_road_name_amp_width"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i. Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etApproachRoadName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ii. Width (mtr.)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etApproachRoadWidth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llApproachPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="iii. Photograph of the Road"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <TextView
+                            android:id="@+id/tv_camera2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_camera2"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_camera2"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            app:srcCompat="@drawable/ic_camera" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/ivCameraCapture2"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvClassification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/h_classification_of_the_locality"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rgClassificationOfLocality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urban developed"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urban developing"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urban Village"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semi Urban"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rural"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Backward"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Institutional"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvCharac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_characteristics_of_the_locality"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <Spinner
+                        android:id="@+id/spinnerCharOfLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/ivCHar"
+                        android:background="@null"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/ivCHar"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@mipmap/down" />
+                </RelativeLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rgCharacteristicsOfLocality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Main City"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Good Urban developed Area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within developing area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Urban undeveloped area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within City suburbs"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within urban remote area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Highly posh locality"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="In interiors"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remote area"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notified Industrial Area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within High end commercial market"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within high end Institutional zone"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within urban developed Area"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within urban developing zone"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within urban remote area"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within posh residential locality"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within developing residential zone"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within ordinary mid-scale residential locality"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within low scale residential locality"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within unregularised residential locality"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within unauthorized colony"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within posh commercial market"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within congested commercial market"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within clustered commercial activity market"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within high foot fall commercial market"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within well-developed notified Industrial area"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within averagely maintained Industrial area"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within unnotified Industrial area"
+                        android:textSize="@dimen/_12sdp" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Institutional area"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Out of municipal limits"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no civic infrastructure available"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within good village area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="With backward village area"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Backward area"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within Remote area"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/j_category_of_the_locality"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:id="@+id/rgCategoryOfLocality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High End"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normal"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Affordable"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EWS"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIG"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MIG"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LIG"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </RadioGroup>
+
+
+              <!--  <CheckBox
+                    android:id="@+id/cbHighEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="High End"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Normal"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Average"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbAffordable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Affordable"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbEws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="EWS"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbHig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="HIG"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbMig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="MIG"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbLig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="LIG"
+                    android:textSize="@dimen/_12sdp" />
+-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvLocationCharac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/k_location_characteristics_of_the_property"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbCornerPlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Corner Plot"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb2SideOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="2 side open"
+                    android:textSize="@dimen/_12sdp" />
+<CheckBox
+                    android:id="@+id/cb3SideOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="3 side open"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbParkFacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Park Facing"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbRoadFacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Road Facing"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbEntranceNorth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Entrance North-East Facing"
+                    android:textSize="@dimen/_12sdp" />
+<CheckBox
+                    android:id="@+id/cbOnWideRoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="On wide road"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbSunlightFacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Sunlight Facing"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNearToMetroStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Near to Metro station"
+                    android:textSize="@dimen/_12sdp" />
+                <CheckBox
+                    android:id="@+id/cbNearToMarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Near to Market"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNeartoHighway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Near to Highway"
+                    android:textSize="@dimen/_12sdp" />
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cbEntranceNorthEastFacing"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:text="cbEntrance North East Facing"-->
+<!--                    android:textSize="@dimen/_12sdp" />-->
+
+                <CheckBox
+                    android:id="@+id/cbSeaFacing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Sea Facing"
+                    android:textSize="@dimen/_12sdp" />
+                <CheckBox
+                    android:id="@+id/cbOrdinaryLocationWithinLocality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Ordinary location within locality"
+                    android:textSize="@dimen/_12sdp" />
+
+              <CheckBox
+                    android:id="@+id/cbGoodLocationWithinLocality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Good Location within the locality"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNormalLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Normal Location within the locality"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/cbGoodLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Good Location"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbAverageLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Average Location within locality"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbPoorLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Poor location within the locality"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbPropertyToward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Property toward end of the locality"
+                    android:textSize="@dimen/_12sdp" />
+ <CheckBox
+                    android:id="@+id/cbOnHighway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=" On Highway"
+                    android:textSize="@dimen/_12sdp" />
+ <CheckBox
+                    android:id="@+id/cbAny_Other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Any other"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvUtilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/l_utilities_facilities_in_the_locality"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <CheckBox
+                    android:id="@+id/cbLifts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Lifts"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbGarden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Garden"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbLandscaping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Landscaping"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbSwimmingPool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Swimming Pool"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbGym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Gym"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbClubHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Club House"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbWalkingTrails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Walking Trails"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbKidsPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Kids play zone"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cb100Power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="100% Power Backup"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbWaterSupplyIssues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Water supply issues"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbFrequentPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Frequent Power cuts issue"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbPoorRoads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Poor roads"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbPoorDrainage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Poor drainage"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbParkingIssues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Parking issues"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNarrowLanes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Narrow lanes"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNewlyDevelopingArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Newly developing area"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbLocalMarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Local Market"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbNormalArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Normal area with no modern facilities"
+                    android:textSize="@dimen/_12sdp" />
+
+                <CheckBox
+                    android:id="@+id/cbUtilitiesNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="None"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m_proximity_to_civic_amenities"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+                />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvSchool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="i. School"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSchoolClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby schools on Google"
+                            android:layout_toRightOf="@+id/tvSchool"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_alignBottom="@+id/tvSchool" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etSchool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_school"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:imeOptions="actionSearch"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:background="@android:color/transparent"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvHospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ii. Hospital"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvHospitalClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby hospitals on Google"
+                            android:layout_toRightOf="@+id/tvHospital"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_alignBottom="@+id/tvHospital"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etHospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_hospital_name"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/black"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvMarket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="iii. Market"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvMarketClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby markets on Google"
+                            android:layout_toRightOf="@+id/tvMarket"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_alignBottom="@+id/tvMarket"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etMarket"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_market_name"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/black"
+                            android:imeOptions="actionSearch"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvMetro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="iv. Metro"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvMetroClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby metro on Google"
+                            android:layout_toRightOf="@+id/tvMetro"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_alignBottom="@+id/tvMetro"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etMetro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_metro_name"
+                            android:textSize="@dimen/_13sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvRailwayStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="v. Railway Station"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvRailwayStationClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby railway stations on Google"
+                            android:layout_toRightOf="@+id/tvRailwayStation"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etRailwayStation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:hint="@string/enter_railway_station_name"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/black"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvAirport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vi. Airport"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tvAirportClick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click here for nearby airports on Google"
+                            android:layout_toRightOf="@+id/tvAirport"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/blue_view"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_alignBottom="@+id/tvAirport"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <AutoCompleteTextView
+                            android:visibility="visible"
+                            android:id="@+id/etAirport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_30sdp"
+                            android:gravity="center_vertical"
+                            android:hint="@string/enter_airport_name"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:textSize="@dimen/_13sdp"
+                            android:imeOptions="actionSearch"
+                            android:textColor="@color/black"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/n_any_new_development_in_surrounding_area"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/tvViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textColor="@color/blue_view"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_gravity="right"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <EditText
+                        android:id="@+id/etAnyNewDevelopment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tvAnyNewDevelopment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_13sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvAnyNewDevelopmentUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green"
+                        android:autoLink="web"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_below="@+id/tvAnyNewDevelopment"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cbNoNewDev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="No New Development in Surrounding Area"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvLocalBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/o_local_body_jurisdiction_limits"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rgLocalBodyJurisdiction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nagar Nigam"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nagar Palika Parishad"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nagar Panchayat"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gram Panchayat"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area not within any municipal limits"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etAreaNotWithinLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:hint="Area not within any municipal limits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner"
+                        android:minHeight="@dimen/_30sdp"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvCheckOnlineLocalBodyJurisdiction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_online"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvCheckDatabaseLocalBodyJurisdiction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_database"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvDevAuth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_development_authority_jurisdiction_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:id="@+id/rgDevelopmentAuthority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NOIDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GNIDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YEIDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HUDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KMDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MDDA"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area not within any development authority limits"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etAreaNotWithinDevelopment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:hint="Area not within any development authority limits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner"
+                        android:minHeight="@dimen/_30sdp"
+                        android:padding="@dimen/_5sdp" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any Other Development Authority"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etAnyOtherDevAut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:hint="Any Other Development Authority"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner"
+                        android:minHeight="@dimen/_30sdp"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvCheckOnlineDevelopmentAuthority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_online"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvCheckDatabaseDevelopmentAuthority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_database"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvMunicipalCorp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q_municipal_corporation_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:id="@+id/rgMunicipalCorporation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NDMC"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SDMC"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EDMC"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ghaziabad Municipal Corporation"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gurgaon Municipal Corporation"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faridabad Municipal Corporation"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolkata Municipal Corporation"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dehradun Municipal Corporation"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area not within any municipal limits"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etAreaNotWithinMunicipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:hint="Area not within any municipal limits"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner"
+                        android:minHeight="@dimen/_30sdp"
+                        android:padding="@dimen/_5sdp" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Any other Municipal Corporation/ Municipality"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/etAnyOtherMunicipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:hint="Any Other Municipal Corporation/ Municipality"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner"
+                        android:minHeight="@dimen/_30sdp"
+                        android:padding="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/tvCheckOnlineMunicipalCorporation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_online"
+                        android:textColor="@color/blue_view"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvCheckDatabaseMunicipalCorporation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_database"
+                        android:textColor="@color/blue_view"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvPrevious"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/grey_bg"
+            android:gravity="center"
+            android:text="PREVIOUS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/app_header"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

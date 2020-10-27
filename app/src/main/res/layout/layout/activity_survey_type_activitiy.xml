@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vis.android.Fragments.Survey_typeActivitiy">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/h1"
+        android:background="@color/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Survey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_below="@id/h1"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_general"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:background="@mipmap/general_survey"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+<ImageView
+    app:srcCompat="@drawable/ic_icon_1"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="General Survey"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/greyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_multi"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@mipmap/multi_survey"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:srcCompat="@drawable/ic_icon_2"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Multi-Storied Flat Survey"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/greyy"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ll_other"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@mipmap/vacant_urvey"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:srcCompat="@drawable/ic_icon_3"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Property Other Than Flats"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/greyy"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ll_industrial"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="@mipmap/industrial_survey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:srcCompat="@drawable/ic_icon_4"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Industrial Property Survey"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/greyy"
+                    android:gravity="center_horizontal"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:id="@+id/ll_special"
+                android:background="@mipmap/special_survey"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:srcCompat="@drawable/ic_icon_5"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Special Asset Survey"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/greyy"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ll_township"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="@mipmap/township_survey"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    app:srcCompat="@drawable/ic_icon_6"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Group Housing Survey"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/greyy"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,401 @@
+<resources>
+
+<!--http://stg.valuationintelligentsystem.com/apis/login/-->
+    <string name="app_name">Vis                                                                                                                                                                                                                                                                                     </string>
+<!--    <string name="server">trendytoday.in</string>-->
+<!--    <string name="server">vis.ssak.co.in</string>-->
+    <string name="server">stg.valuationintelligentsystem.com</string>
+    <!--<string name="server">valuerservice.com</string>-->
+    <string name="api_intermediary_path">apis</string>
+<!--    <string name="api_intermediary_path">vis/apis</string>-->
+
+    <!--Todo need to change with current project key-->
+    <!--  <string name="api_key">AIzaSyBuLh6yNtASoNxsEoTl4KPC1h496BDJb0I</string>-->
+
+    <!--<string name="api_key">AIzaSyCUIyf9R8LN9ZeU37zkrRaPO1r3kxXfjJQ</string>-->
+
+    <string name="api_key">AIzaSyALTsVJy_Py_INw-TFmLqdU9lGHQHiqX2k</string>
+    <!--<string name="api_key">AIzaSyAgS2TckMN-TYvtCsE-HfHqcVA6x7XC59Y</string>-->
+
+    <string name="open">Open</string>
+
+<!--    <string name="videoPath">http://trendytoday.in/vis/assets/admin/clien_doc/VIS0_</string>-->
+    <string name="videoPath">http://stg.valuationintelligentsystem.com/assets/admin/clien_doc/VIS0_</string>
+
+    <string name="login">login</string>
+    <string name="reassignCase">reassignCase</string>
+    <string name="GetUploadedDocuments">GetUploadedDocuments</string>
+    <string name="SurveyNotRequired">SurveyNotRequired</string>
+    <string name="getLeads">getLeads</string>
+    <string name="SkipSurveyList">SkipSurveyList</string>
+    <string name="ReassignCaseList">ReassignCaseList</string>
+    <string name="form_submission">PostGeneralSurveyInfo</string>
+    <string name="ViewNotification">ViewNotification</string>
+    <string name="verify_otp">otpVerification</string>
+    <string name="GetCompletedCases">GetCompletedCases</string>
+    <string name="resent_otp">resendOtp</string>
+    <string name="log_out">logout</string>
+    <string name="get_master_data">getMasterData</string>
+    <string name="get_Leads">get_Leads</string>
+    <string name="PostDocuments">PostDocuments</string>
+    <string name="UploadFile">UploadFile</string>
+    <string name="UploadPropertyImage">UploadPropertyImage</string>
+    <string name="caseAcceptReject">caseAcceptReject</string>
+    <string name="GetLeadById">GetLeadById</string>
+    <string name="GetCompleteLeadById">GetCompleteLeadById</string>
+    <string name="get_preliminary_data">getPreliminary</string>
+    <string name="LastSavedAssetForm">LastSavedAssetForm</string>
+    <string name="calling">calling</string>
+    <string name="SendSupportEmail">SendSupportEmail</string>
+    <string name="SendBoundarySchdMail">SendBoundarySchdMail</string>
+    <string name="SaveSurveyLocation">SaveSurveyLocation</string>
+    <string name="GetAreaMeasurement">GetAreaMeasurement</string>
+    <string name="PostPreliminary">PostPreliminary</string>
+    <string name="upload_doc">upload_doc</string>
+    <string name="register">register</string>
+    <string name="get_schedule">get_schedule</string>
+    <string name="post_schedule">post_schedule</string>
+    <string name="reschedule">reschedule</string>
+    <string name="get_media">GetMedia</string>
+    <string name="PostBasicSurveyInfo">PostBasicSurveyInfo</string>
+    <string name="SendPropertyNotIdentifiedMail">SendPropertyNotIdentifiedMail</string>
+    <string name="SendReasonForApproval">SendReasonForApproval</string>
+    <string name="GetBasicSurveyInfo">GetBasicSurveyInfo</string>
+    <string name="GetGeneralSurveyInfo">GetGeneralSurveyInfo</string>
+    <string name="post_locator">PostMedia</string>
+    <string name="priliminary_dailog">To fill the Preliminary form, please take reference from the saved documents of the property.</string>
+    <string name="mail">Are you sure you want to add documents?</string>
+    <string name="login_text">Please enter your registered mobile number to sign in</string>
+    <string name="login_otp">Please enter the verification code send to your mobile number</string>
+    <string name="title_activity_otp">OTP</string>
+    <string name="cannot_be_blank">Cannot be blank</string>
+    <string name="doc_info">No Schedule mentioned in the legal document.(In this situation email to the Bank and the owner of non-availability of the schedule of the property for proper indentification of it)</string>
+    <string name="agreeText">I agree to pay the amount mentioned above for the preparation of Valuation Report. I agree that I’ll not put pressureon Valuer firm to distort any facts and would not try to influence any member or official of the firm in the ill spirit orvested interest and to benefit any individual or organization by any means illegitimately.</string>
+    <string name="land1">\"Mark here Any important known place like nearest market, shopping complex, important shop, showroom, metro station, bus stand, hospital, etc.\"</string>
+    <string name="land2">\"Mark here Main road or any important nearby road.\"</string>
+    <string name="land3">\"Mark here Any other point of importance within the locality of subject property like park, local community shop, community centre, etc.\"</string>
+    <string-array name="property_array">
+        <item>Multi-Storied Flats</item>
+        <item>Property Other Than Flats</item>
+        <item>Industrial</item>
+        <item>Special Assets</item>
+        <item>Group Housing</item>
+
+    </string-array>
+
+    <string-array name="boundry_array">
+        <item>East</item>
+        <item>West</item>
+        <item>North</item>
+        <item>South</item>
+
+    </string-array>
+
+
+    <string-array name="place_array">
+        <item>restaurant</item>
+        <item>hospital</item>
+        <item>school</item>
+
+    </string-array>
+
+
+    <string name="text2">I confirm that I have done the Survey of the asset properly as per the fair professional best practices and
+Valuation &amp; Survey policy guidelines issued by the organization. I have not taken any cash or kind from the
+customer or given the customer any wrong or false information or have made any false claims for arbitrary
+providing the Asset Valuation as per one’s need or requirement by distorting the facts. In case at any point of
+time it is found that I have done any kind of fraudulent activity in this case and misled the company then I
+understand its legal consequences and appropriate penal action which company can take against me. Also in
+regard to it any monetary or reputation loss will be recovered from me.</string>
+    <string name="text1">I confirm that the property is inspected in front of me and I have provided all the information true to the best of
+my knowledge. I understand that any false information provided by me will lead to incorrect valuation report
+and I’d be solely responsible for it and will bear the charges for the changes/ modifications which have to
+undergo due to the false information. I also undertake that I haven’t given any cash or in kind to any member of
+R.K Associates to influence the Value of the Property or favor any individual or organization and the same is not
+accepted or asked by the member of R.K Associates. Any such act will lead to cancellation of the material
+prepared by R.K Associates with forfeiting of the fees and i’ll be completely responsible for its repercussions
+and legal actions taken for it.\n\n
+        IMPORTANT: We have not authorized any of our Surveyor to take Cash or kind from the customers directly. In
+case Surveyor or any member of R.K Associates asks for any money or kind from you then kindly please inform
+on number +91-9999597597. Our Valuation process is very stringent and have multiple check points to ensure
+correct &amp; error free reports to keep the lending agency risk free. In case Surveyor claims that he would be able
+to arbitrary effect the Valuation figures unfairly or as per your requirement &amp; need then he is making a false
+claim to you and we request you to complaint such act immediately on the number provided above.</string>
+    <string name="agreeTextt">9. I agree to pay the amount mentioned above for the preparation of Valuation Report. I agree that I’ll not put pressure
+on Valuer firm to distort any facts and would not try to influence any member or official of the firm in the ill spirit or
+vested interest and to benefit any individual or organization by any means illegitimately.</string>
+    <string name="beautiful">Beautiful</string>
+    <string name="_25_garden_landscaping">25. Garden/ Landscaping</string>
+    <string name="excellent">Excellent</string>
+    <string name="ordinary">Ordinary</string>
+    <string name="available_within_the_property">Available within the property</string>
+    <string name="title_activity_special_assets_dynamic_view">SpecialAssetsDynamicView</string>
+    <string name="external_dir">GetSignature</string>
+
+    <string name="lbl_new_note_title">New Data</string>
+    <string name="lbl_edit_note_title">Edit Data</string>
+    <string name="msg_no_notes">No Data found!</string>
+
+    <string name="b_land_area">b. Land Area<font color='red'>*</font></string>
+    <string name="b_land_area_">c. Land Area<font color='red'>*</font></string>
+
+    <string name="b_land_area_init">ii. Land Area<font color='red'>*</font></string>
+    <string name="b_land_area_init_">iii. Land Area<font color='red'>*</font></string>
+    <string name="d_in_case_of_difference_of_init">iii. In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="d_in_case_of_difference_of_init_">iv. In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="d_ground_coverage">d. Ground Coverage<font color='red'>*</font></string>
+    <string name="d_ground_coverage_">e. Ground Coverage<font color='red'>*</font></string>
+    <string name="d_ground_coverage_init">iv. Ground Coverage<font color='red'>*</font></string>
+    <string name="d_ground_coverage_init_">v. Ground Coverage<font color='red'>*</font></string>
+    <string name="f_covered_built_up_area_init">v. Covered Built-up Area<font color='red'>*</font></string>
+    <string name="f_covered_built_up_area_init_">vi. Covered Built-up Area<font color='red'>*</font></string>
+    <!--GeneralForm1-->
+    <string name="a_purpose_of_the_valuation">a. Purpose of the Valuation<font color='red'>*</font></string>
+    <string name="b_property_shown_by">b. Property shown by<font color='red'>*</font></string>
+    <string name="i_name">i. Name<font color='red'>*</font></string>
+    <string name="ii_contact_number">ii. Contact Number<font color='red'>*</font></string>
+    <string name="iii_co_person_mail">iii. Coordinating Person Email<font color='red'>*</font></string>
+    <string name="iv_co_person_relation">iv. Coordinating Person Relation<font color='red'>*</font></string>
+    <string name="c_type_of_property">c. Type of Property<font color='red'>*</font></string>
+    <string name="d_survey_type">d. Survey Type<font color='red'>*</font></string>
+    <string name="e_reason_for_half_survey_or_only_photographs_taken">e. Reason for Half survey or only photographs taken<font color='red'>*</font></string>
+    <!--GeneralForm2-->
+    <string name="a_legal_owner_name_s">a. Legal Owner Name/s<font color='red'>*</font></string>
+    <string name="b_property_purchaser_name">b. Property Purchaser Name <i>(If Applicable)</i></string>
+    <string name="c_property_address_under_valuation">c. Property Address under Valuation<font color='red'>*</font></string>
+    <string name="d_present_residence_address_of_the_owner_purchaser">d. Present Residence Address of the Owner/ Purchaser<font color='red'>*</font></string>
+    <string name="e_property_constitution">e. Property constitution<font color='red'>*</font></string>
+    <string name="f_property_possessed_by_at_the_time_of_survey">f. Property possessed by at the time of survey<font color='red'>*</font></string>
+    <string name="g_in_case_possessed_by_tenants_or_sealed_then_since_when">g. In case possessed by tenants or sealed then since when<font color='red'>*</font></string>
+    <string name="h_in_case_property_is_on_rent">h. In case property is on rent</string>
+    <string name="i_any_dispute_came_to_knowledge_with_the_tenants_or_any_court_case">h. Any dispute came to knowledge with the tenants or any court case?<font color='red'>*</font></string>
+    <string name="g_any_dispute_came_to_knowledge_with_the_tenants_or_any_court_case">g. Any dispute came to knowledge with the tenants or any court case?<font color='red'>*</font></string>
+    <string name="j_details_of_existing_mortgages_charges_encumbrances_on_the_property_if_any">i. Details of Existing mortgages/ charges/ encumbrances on the property, if any<font color='red'>*</font></string>
+    <string name="k_Comment_on_existing_mortgages_charges_encumbrances_on_the_property">k. Comment on existing mortgages/ charges/ encumbrances on the property, if any<font color='red'>*</font></string>
+    <string name="l_Comment_on_whether_the_owners_of_the_property_have_issued_any_guarantee_personal_or_corporate__as_the_case_may_be">l. Comment on whether the owners of the property have issued any guarantee(personal or corporate) as the case may be<font color='red'>*</font></string>
+    <string name="m_Notice_of_acquisition_if_any_and_area_under_acquisition">m. Notice of acquisition if any and area under acquisition<font color='red'>*</font></string>
+    <string name="n_Notification_of_road_widening_if_any_and_area_under_acquisition">n. Notification of road widening if any and area under acquisition<font color='red'>*</font></string>
+    <string name="o_Heritage_restrictions_if_any">o. Heritage restrictions, if any<font color='red'>*</font></string>
+    <string name="p_Information_regarding_municipal_taxes">p. Information regarding municipal taxes<font color='red'>*</font></string>
+    <string name="q_Whether_entire_piece_of_land_on_which_the_unit_is_set_up_property_is_situated_has_been_mortgaged_or_to_be_mortgaged">q. Whether entire piece of land on which the unit is set up / property is situated has been mortgaged or to be mortgaged<font color='red'>*</font></string>
+    <string name="p_Whether_entire_piece_of_land_is_mortgaged_or_to_be_mortgaged">p. Whether entire piece of land is mortgaged or to be mortgaged<font color='red'>*</font></string>
+    <string name="bill_payment_receipt">Bill / payment receipt<font color='red'>*</font></string>
+
+
+    <!--GeneralForm3-->
+    <string name="a_postal_address_of_the_property">a. Postal Address of the Property<font color='red'>*</font></string>
+    <string name="b_confirm_the_landmark_from_property_owner">b. Confirm the Landmark from property owner<font color='red'>*</font></string>
+    <string name="c_ward_name_no">c. Ward Name/ No.<font color='red'>*</font></string>
+    <string name="d_tehsil_block_name">d. Tehsil/ Block Name<font color='red'>*</font></string>
+    <string name="e_main_road_name_amp_width"><![CDATA[e. Main Road Name & Width]]><font color='red'>*</font></string>
+    <string name="f_type_of_approach_road">f. Type of Approach Road<font color='red'>*</font></string>
+    <string name="g_approach_road_name_amp_width"><![CDATA[g. Approach Road Name & Width]]><font color='red'>*</font></string>
+    <string name="h_classification_of_the_locality">h. Classification of the Locality<font color='red'>*</font></string>
+    <string name="i_characteristics_of_the_locality">i. Characteristics of the Locality<font color='red'>*</font></string>
+    <string name="j_category_of_the_locality">j. Category of the Locality<font color='red'>*</font></string>
+    <string name="k_location_characteristics_of_the_property">k. Location characteristics of the Property<font color='red'>*</font></string>
+    <string name="l_utilities_facilities_in_the_locality">l. Utilities/ Facilities in the locality<font color='red'>*</font></string>
+    <string name="m_proximity_to_civic_amenities">m. Proximity to civic amenities<font color='red'>*</font></string>
+    <string name="n_any_new_development_in_surrounding_area">n. Any new development in surrounding area<font color='red'>*</font></string>
+    <string name="o_local_body_jurisdiction_limits">o. Local Body Jurisdiction limits<font color='red'>*</font></string>
+    <string name="p_development_authority_jurisdiction_name">p. Development Authority Jurisdiction Name<font color='red'>*</font></string>
+    <string name="q_municipal_corporation_name">q. Municipal Corporation Name<font color='red'>*</font></string>
+    <!--GeneralForm4-->
+    <string name="a_land_type">a. Land Type<font color='red'>*</font></string>
+    <string name="b_shape_of_the_land">b. Shape of the Land<font color='red'>*</font></string>
+    <string name="c_level_of_land">c. Level of Land<font color='red'>*</font></string>
+    <string name="d_frontage_to_depth_ratio">d. Frontage to depth ratio<font color='red'>*</font></string>
+    <!--GeneralForm5-->
+    <string name="a_is_independent_access_available_to_the_property">a. Is Independent access available to the property<font color='red'>*</font></string>
+    <string name="b_is_property_clearly_demarcated_with_permanent_boundaries">b. Is property clearly demarcated with permanent boundaries?<font color='red'>*</font></string>
+    <string name="c_is_land_merged_or_colluded_with_any_other_property">c. Is land merged or colluded with any other property?<font color='red'>*</font></string>
+    <string name="d_in_case_property_is_merged_with_non_mortgaged_portion_then_is_it_possible_to_have_valuation_of_the_subject_property">d.  In case property is merged with non-mortgaged portion then is it possible to have Valuation of the subject property seperately?<font color='red'>*</font></string>
+    <string name="e_in_case_property_is_merged_with_non_mortgaged_portion_then_is_it_practically_possible_to_separate_the_two_without_requirement_of_extensive_change_in_structure">e. In case property is merged with non-mortgaged portion then is it practically possible to separate the two without requirement of extensive change in structure?<font color='red'>*</font></string>
+    <!--GeneralForm6-->
+    <string name="a_property_measurement">a. Property Measurement<font color='red'>*</font></string>
+    <string name="a_property_measurement_init">i. Property Measurement<font color='red'>*</font></string>
+    <string name="b_reason_for_no_measurement">b. Reason for no measurement<font color='red'>*</font></string>
+    <string name="b_reason_for_no_measurement_init">ii. Reason for no measurement<font color='red'>*</font></string>
+    <string name="c_land_area">c. Land Area<font color='red'>*</font></string>
+    <string name="c_land_area2">b. Land Area<font color='red'>*</font></string>
+    <string name="d_in_case_of_difference">v. In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="d_in_case_of_difference_">v. In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="e_ground_coverage">c. Ground Coverage</string>
+    <string name="e_ground_coverage_">d. Ground Coverage</string>
+    <string name="f_covered_built_up_area">c. Covered Built-up Area<font color='red'>*</font></string>
+    <string name="f_covered_built_up_area_">d. Covered Built-up Area<font color='red'>*</font></string>
+    <string name="g_in_case_of_difference_of">In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="g_in_case_of_difference_of_">In case of difference of more than 5% between the papers and site survey then reason for the same<font color='red'>*</font></string>
+    <string name="h_nature_of_violation_done_in_the_property">d. Nature of violation done in the property<font color='red'>*</font></string>
+    <string name="h_nature_of_violation_done_in_the_property_">e. Nature of violation done in the property<font color='red'>*</font></string>
+    <string name="i_extent_of_violation">e. Extent of Violation<font color='red'>*</font></string>
+    <string name="i_extent_of_violation_">f. Extent of Violation<font color='red'>*</font></string>
+    <string name="j_is_this_being_regularized">f. Is this being regularized<font color='red'>*</font></string>
+    <string name="j_is_this_being_regularized_">g. Is this being regularized<font color='red'>*</font></string>
+    <string name="attach_regularization_certificate">Attach regularization certificate<font color='red'>*</font></string>
+    <!--GeneralForm7-->
+    <string name="a_zoning_regulations">a. Zoning Regulations<font color='red'>*</font></string>
+    <string name="b_surrounding_land_uses"><![CDATA[b. Surrounding land uses & adjoining properties in terms of uses]]><font color='red'>*</font></string>
+    <string name="c_property_land_use">c. Property/ Land use as per documents or Master Plan provisions<font color='red'>*</font></string>
+    <string name="d_any_conversion_to_the_land_use">d. Any conversion to the land use<font color='red'>*</font></string>
+    <string name="details">Details<font color='red'>*</font></string>
+    <string name="attach_conversion_certificate">Attach conversion certificate<font color='red'>*</font></string>
+    <string name="e_current_best_use_of_property_land">e. Current best use of Property/ Land<font color='red'>*</font></string>
+    <string name="f_current_activity">f. Current activity carried out in the property/ on the land<font color='red'>*</font></string>
+    <string name="b_current_activity">b. Current activity carried out in the property/ on the land<font color='red'>*</font></string>
+    <!--GeneralForm8-->
+    <string name="a_construction_status">a. Construction Status<font color='red'>*</font></string>
+    <string name="b_in_case_of_under">b. In case of under construction property then stage of construction</string>
+    <string name="c_total_number_of_floors_in_the_building">b. Total Number of Floors in the Building<font color='red'>*</font></string>
+    <string name="c_total_number_of_floors_in_the_building_">c. Total Number of Floors in the Building<font color='red'>*</font></string>
+    <string name="d_floor_on_which">c. Floor on which subject property is situated<font color='red'>*</font></string>
+    <string name="d_floor_on_which_">d. Floor on which subject property is situated<font color='red'>*</font></string>
+    <string name="e_type_of_unit_n">d. Type of Unit/ Number of Rooms/ Cabins/ Cubicles<font color='red'>*</font></string>
+    <string name="e_type_of_unit_n_">e. Type of Unit/ Number of Rooms/ Cabins/ Cubicles<font color='red'>*</font></string>
+    <string name="f_building_type">e. Building Type<font color='red'>*</font></string>
+    <string name="f_building_type_">f. Building Type<font color='red'>*</font></string>
+    <string name="g_class_of_construction">f. Class of construction<font color='red'>*</font></string>
+    <string name="g_class_of_construction_">g. Class of construction<font color='red'>*</font></string>
+    <string name="h_roof">g. Roof<font color='red'>*</font></string>
+    <string name="h_roof_">h. Roof<font color='red'>*</font></string>
+    <string name="i_flooring">h. Flooring<font color='red'>*</font></string>
+    <string name="i_flooring_">i. Flooring<font color='red'>*</font></string>
+    <string name="j_appearance_condition_of_the_building">i. Appearance/Condition of the Building<font color='red'>*</font></string>
+    <string name="j_appearance_condition_of_the_building_">j. Appearance/Condition of the Building<font color='red'>*</font></string>
+    <string name="k_maintenance_of_the_building">j. Maintenance of the Building<font color='red'>*</font></string>
+    <string name="k_maintenance_of_the_building_">k. Maintenance of the Building<font color='red'>*</font></string>
+    <string name="l_interior_decoration">j. Interior decoration<font color='red'>*</font></string>
+    <string name="l_interior_decoration_">k. Interior decoration<font color='red'>*</font></string>
+    <string name="m_interior_finishing">k. Interior Finishing<font color='red'>*</font></string>
+    <string name="m_interior_finishing_">l. Interior Finishing<font color='red'>*</font></string>
+    <string name="n_exterior_finishing">l. Exterior Finishing<font color='red'>*</font></string>
+    <string name="n_exterior_finishing_">m. Exterior Finishing<font color='red'>*</font></string>
+    <string name="o_kitchen_pantry">m. Kitchen/ Pantry<font color='red'>*</font></string>
+    <string name="o_kitchen_pantry_">n. Kitchen/ Pantry<font color='red'>*</font></string>
+    <string name="p_class_of_electrical_fittings">n. Class of Electrical fittings<font color='red'>*</font></string>
+    <string name="p_class_of_electrical_fittings_">o. Class of Electrical fittings<font color='red'>*</font></string>
+    <string name="q_class_of_sanitary_plumbing_amp_water_supply_fittings">o. Class of Sanitary/ Plumbing &amp; water supply fittings<font color='red'>*</font></string>
+    <string name="q_class_of_sanitary_plumbing_amp_water_supply_fittings_">p. Class of Sanitary/ Plumbing &amp; water supply fittings<font color='red'>*</font></string>
+    <string name="r_water_arrangements">p. Water arrangements<font color='red'>*</font></string>
+    <string name="r_water_arrangements_">q. Water arrangements<font color='red'>*</font></string>
+    <string name="s_fixed_wooden_work">q. Fixed Wooden Work<font color='red'>*</font></string>
+    <string name="s_fixed_wooden_work_">r. Fixed Wooden Work<font color='red'>*</font></string>
+    <string name="t_age_of_building_recent_improvements_renovations_done">r. Age of Building/ Recent Improvements, renovations done<font color='red'>*</font></string>
+    <string name="t_age_of_building_recent_improvements_renovations_done_">s. Age of Building/ Recent Improvements, renovations done<font color='red'>*</font></string>
+    <string name="u_maintenance_of_the_building">s. Maintenance of the Building<font color='red'>*</font></string>
+    <string name="u_maintenance_of_the_building_">t. Maintenance of the Building<font color='red'>*</font></string>
+    <string name="v_any_defects_in_the_building">t. Any defects in the building<font color='red'>*</font></string>
+    <string name="v_any_defects_in_the_building_">u. Any defects in the building<font color='red'>*</font></string>
+    <string name="w_any_violation_done_in_the_property">u. Any violation done in the property<font color='red'>*</font></string>
+    <string name="w_any_violation_done_in_the_property_">v. Any violation done in the property<font color='red'>*</font></string>
+    <string name="x_extent_of_violation">v. Extent of Violation<font color='red'>*</font></string>
+    <string name="x_extent_of_violation_">w. Extent of Violation<font color='red'>*</font></string>
+    <!--GeneralForm9-->
+    <string name="a_boundary_wall_only_for_individual_property">a. Boundary Wall (Only for individual property)<font color='red'>*</font></string>
+    <string name="b_lift_elevators">b. Lift/ elevators<font color='red'>*</font></string>
+    <string name="d_power_backup">d. Power backup<font color='red'>*</font></string>
+    <string name="c_HVAC_Systems">c. HVAC Systems<font color='red'>*</font></string>
+    <string name="e_garden_landscaping">e. Garden/ Landscaping<font color='red'>*</font></string>
+    <string name="f_parking_facilities">f. Parking facilities<font color='red'>*</font></string>
+    <string name="g_security_hut">g. Security Hut<font color='red'>*</font></string>
+    <string name="h_pavements_internal_roads">h. Pavements/ Internal roads<font color='red'>*</font></string>
+    <string name="description">Description<font color='red'>*</font></string>
+    <string name="c_connections_">c. Connections<font color='red'>*</font></string>
+    <string name="d_connections_">d. Connections<font color='red'>*</font></string>
+
+    <!--GeneralForm10-->
+    <string name="a_similar_kind_of_properties">a. Similar kind of properties<font color='red'>*</font></string>
+    <string name="b_market_conditions_related">b. Market conditions related to demand and supply of the kind of the subject property in the area<font color='red'>*</font></string>
+    <string name="c_any_specific_negativity">c. Any specific negativity/ defect/ disadvantages in the property/ location<font color='red'>*</font></string>
+    <string name="d_at_what_true_rate">d. At what True rate Owner bought this Property<font color='red'>*</font></string>
+    <string name="e_sale_purchase_rate">e. Sale Purchase Rate<font color='red'>*</font></string>
+    <string name="e_minimum_rate_in_the_locality">e. Minimum Rate in the locality<font color='red'>*</font></string>
+    <string name="f_maximum_rate_in_the_locality">f. Maximum Rate in the locality<font color='red'>*</font></string>
+    <string name="h_any_recent_sale_purchase_information_nearby_recently">g. Any recent sale purchase information nearby recently</string>
+    <string name="g_local_information">h. Local Information gathered during Site survey (Minimum 2 enquiries are must)<font color='red'>*</font></string>
+    <string name="j_estimated_value_of_the_property_as_per_surveyor">i. Estimated Value of the Property as per surveyor<font color='red'>*</font></string>
+    <string name="k_reason_for_this_value_concluding_comments">j. Reason for this Value/ Concluding comments<font color='red'>*</font></string>
+    <!--GeneralForm11-->
+    <string name="a_completion_certificate">a. Completion Certificate<font color='red'>*</font></string>
+    <string name="b_municipal_tax_certificate">b. Municipal Tax Certificate<font color='red'>*</font></string>
+    <string name="c_electricity_bill">c. Electricity Bill<font color='red'>*</font></string>
+    <string name="d_water_sewerage_bill">d. Water/ Sewerage Bill<font color='red'>*</font></string>
+    <string name="e_regularization">e. Regularization<font color='red'>*</font></string>
+    <string name="f_pending">f. Pending Documents<font color='red'>*</font></string>
+
+    <string name="compass_dial">Compass Dial</string>
+    <string name="compass_hands">Compass Hands</string>
+    <string name="about_us">VIS(Value Intelligence System) is a survey app which is created for survey of the properties.The property can be of any type like Multistories flat,Group Housing,Special Assets,Property Other Than Flats and In industrial Property.Properties survey will be held by Surveyor which will be created by VIS Admin.Surveyor can have one than one survey.\n\nVIS(Value Intelligence System) is a survey app which is created for survey of the properties.The property can be of any type like Multistories flat,Group Housing,Special Assets,Property Other Than Flats and In industrial Property.Properties survey will be held by Surveyor which will be created by VIS Admin.Surveyor can have one than one survey.\n\nVIS(Value Intelligence System) is a survey app which is created for survey of the properties.The property can be of any type like Multistories flat,Group Housing,Special Assets,Property Other Than Flats and In industrial Property.Properties survey will be held by Surveyor which will be created by VIS Admin.Surveyor can have one than one survey. </string>
+    <string name="plant"><![CDATA[Plant & Machinery Gross & Net Block:]]></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_cases">New Cases</string>
+    <string name="accepted_cases">Accepted Cases</string>
+    <string name="scheduled_cases">Scheduled Cases</string>
+    <string name="send_email">Send Email</string>
+    <string name="noInternetConnection">No Internet Connection</string>
+    <string name="documents_to_be_collected_at_site_during_survey">Documents to be collected at site during survey</string>
+    <string name="noInformationAvailable">No information available</string>
+    <string name="check_online">Check online</string>
+    <string name="check_database">Check database</string>
+    <string name="enter_school">Enter School Name</string>
+    <string name="enter_hospital_name">Enter Hospital Name</string>
+    <string name="enter_metro_name">Enter Metro Name</string>
+    <string name="enter_market_name">Enter Market Name</string>
+    <string name="enter_railway_station_name">Enter Railway Station Name</string>
+    <string name="enter_airport_name">Enter Airport Name</string>
+    <string name="not_available">Not available</string>
+    <string name="camera_permission_required">Camera Permission Required!</string>
+    <string name="any_other_comments">Any other comments</string>
+    <string name="display_unit">Display Unit</string>
+    <string name="clear">CLEAR</string>
+    <string name="email_content">You have got this email since in your provided property documents no suitable property schedule/ boundaries were mentioned to properly cross check the identification of the property at site.\n\nPlease Click Here to provide additional information/ documents by\n\n\n\n\nThanks,\nValuation Intelligent System</string>
+    <string name="no_boundary_schedule">No boundary schedule mentioned in the legal document</string>
+    <string name="no_boundary_schedule_mail">No boundary schedule mentioned in the legal document Send Email</string>
+    <string name="preliminary_details">Preliminary Details</string>
+    <string name="collect_following_documents_during_site_survey">Collect following documents during site survey</string>
+    <string name="site_survey_coordinating_person_details">Site Survey Coordinating Person Details</string>
+    <string name="any_other_imp_place">(Any important known place like nearest market, shopping complex, important shop, showroom, metro station, bus stand, hospital, etc.)</string>
+    <string name="any_other_point">(Any other point of importance within the locality of subject property like park, local community shop, community centre, etc.)</string>
+
+    <string name="photograph">Photograph<font color='red'>*</font></string>
+    <string name="b_type_of_the_property">b. Type of the Property<font color='red'>*</font></string>
+    <string name="b_type_of_the_assets">b. Type of the Assets<font color='red'>*</font></string>
+    <string name="a_purpose_of_the_valuation_g1">a. Purpose of the Valuation<font color='red'>*</font></string>
+
+    <string name="a_name">a. Name<font color='red'>*</font></string>
+    <string name="b_date">b. Date<font color='red'>*</font></string>
+    <string name="a_surveyor_name">a. Surveyor Name<font color='red'>*</font></string>
+    <string name="b_surveyor_id">b. Surveyor Id<font color='red'>*</font></string>
+    <string name="c_date">b. Date<font color='red'>*</font></string>
+    <string name="c_mobilee">c. Mobile No.<font color='red'>*</font></string>
+
+
+    <string name="i_lessee_name">i. Lessee Name<font color='red'>*</font></string>
+    <string name="ii_lessee_contact_number">ii. Lessee Contact Number<font color='red'>*</font></string>
+    <string name="undertaking_by_customer_text">I confirm that the property is inspected in front of me and I have provided all the information true related to the property to the best of my knowledge. I understand that any false or manipulative information provided by me will be considered as cheating with the professional organization since it will lead to incorrect valuation report and I’d be solely responsible for this unlawful act and will bear the charges for the changes/ modifications which have to undergo due to the false information by me. I also undertake that I haven’t given any cash or in kind to any member of R.K Associates to influence the Value of the Property or favor any individual or organization and the same is not accepted or asked by the member of R.K Associates. Any such act will lead to cancellation of the material prepared by R.K Associates with forfeiting of the fees and i’ll be completely responsible for its repercussions and legal actions taken for it.</string>
+    <string name="undertaking_by_important">\n\nIMPORTANT: We have not authorized any of our Surveyor to take Cash or kind from the customers in any situation. In case Surveyor or any member of R.K Associates asks for any money or kind from you then kindly please inform on number +91-9958632707. Our Valuation process is very stringent and have multiple check points to ensure fair, unbiased, correct &amp; error free reports to ensure highest level of integrity. In case Surveyor claims that he would be able to arbitrary effect the Valuation figures unfairly or as per your requirement &amp; need then he is making a false claim to you and we request you to complaint such act immediately on the number provided above.</string>
+
+    <string name="undertaking_by_surveyor_text">I confirm that I have carried out the Survey of the property properly as per the fair professional best practices and Valuation &amp; Survey policy guidelines issued by the organization. I have not taken any cash or kind from the customer or given the customer any wrong or false information or have made any false claims for arbitrary providing the Property Valuation as per one’s need or requirement by distorting the facts. In case at any point of time it is found that I have done any kind of fraudulent activity in this case and misled the company then I understand its legal consequences and appropriate penal/ legal action which company can take against me. Also in regard to it any monetary or reputation loss to the company because of any of my fraudulent act then such loss will be recovered from me by the company.</string>
+    <string name="not_applicable">Not Applicable</string>
+    <string name="title_deed">Title Deed</string>
+    <string name="sale_deed">Sale Deed</string>
+    <string name="conveyance_deed">Conveyance Deed</string>
+    <string name="possession_certificate">Possession Certificate</string>
+    <string name="cizra_map">Cizra Map</string>
+    <string name="approved_building_map">Approved Building Map</string>
+    <string name="any_other_document">Any other document</string>
+    <string name="flat_in_multi_storied_building">Flat in multi storied building</string>
+    <string name="very_large_land_comprising_of_multiple_land_parcels">Very large land comprising of multiple land parcels</string>
+    <string name="npa_property_so_no_more_details_can_be_provided">NPA property so no more details can be provided</string>
+    <string name="any_other_reason">Any other reason</string>
+    <string name="landArea3">Land side measurement details taken from the documents only since at site:</string>
+    <string name="as_per_site_survey">As Per Site Survey</string>
+    <string name="landArea1">Land side details measured physically</string>
+    <string name="landArea2">Land side details cross checked through google satellite</string>
+    <string name="google_maps_key">AIzaSyALTsVJy_Py_INw-TFmLqdU9lGHQHiqX2k</string>
+    <string name="assestChangedWarning">You are changing Types of Assets.  Change in Types of Assets will clear all the data you have surveyed. \n  Do you still want to change the Types of Assets?</string>
+    <string name="assestChangedWarning1">Assets can be changed from Preliminary Page. \n Do you want to change Types of Assets?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

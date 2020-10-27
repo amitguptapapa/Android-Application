@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vis.android.Activities.ScheduleActivity">
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:background="@color/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp" />
+        </RelativeLayout>
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Schedule Case List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+<ListView
+    android:id="@+id/lv_schedule"
+    android:layout_below="@+id/rr_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homee"
+        android:title="Home"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/reassign"
+        android:title="Reassign"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/reschedule"
+        android:title="Reschedule"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/calling"
+        android:title="Email/ Call"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/survey_not_required"
+        android:title="Survey Not Required"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/documents"
+        android:title="Documents"
+        app:showAsAction="never"></item>
+   <item
+        android:id="@+id/changeSurvey"
+        android:title="Change Survey Form"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_one"
+        android:title="General Form 1"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_two"
+        android:title="General Form 2"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_three"
+        android:title="General Form 3"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_four"
+        android:title="General Form 4"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_five"
+        android:title="General Form 5"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_six"
+        android:title="General Form 6"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_seven"
+        android:title="General Form 7"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_eight"
+        android:title="General Form 8"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_nine"
+        android:title="General Form 9"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@+id/general_ten"
+        android:title="General Form 10"
+        app:showAsAction="never"></item>
+
+</menu>

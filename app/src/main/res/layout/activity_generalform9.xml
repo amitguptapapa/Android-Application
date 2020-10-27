@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.vis.android.Activities.General.Fragments.GeneralForm9">
+
+    <!--
+        <include
+            android:id="@+id/rr_header"
+            layout="@layout/form_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp" />
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/rr_header"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="9. Utility/ Service Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical"
+  >
+
+                    <TextView
+                        android:id="@+id/tvBound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_boundary_wall_only_for_individual_property"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RadioGroup
+
+        android:id="@+id/rgBoundaryWalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Common boundary wall of a complex"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i. Running Mtr."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlBoundaryRunning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rectangle_corner">
+
+            <EditText
+                android:id="@+id/etBoundaryRunningMtr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="ii. Height"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlBoundaryHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/rlSpinnerHeightFtMtr"
+                android:background="@drawable/rectangle_corner">
+
+                <EditText
+                    android:id="@+id/etBoundaryHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSpinnerHeightFtMtr"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/rectangle_corner">
+
+                <Spinner
+                    android:id="@+id/spinnerBoundaryHeightFtMtr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toLeftOf="@+id/ivHeightFtMtr"
+                    android:background="@null"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/ivHeightFtMtr"
+                    android:layout_width="@dimen/_11sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@mipmap/down" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="iii. Width (mtr)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlBoundaryWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rectangle_corner">
+
+            <EditText
+                android:id="@+id/etBoundaryWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTypee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="iv. Type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlSpinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rectangle_corner"
+            android:minHeight="@dimen/_30sdp">
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/ivType"
+                android:background="@null"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@mipmap/down" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+                    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="v. Finish"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlSpinnerFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rectangle_corner"
+            android:minHeight="@dimen/_30sdp">
+
+            <Spinner
+                android:id="@+id/spinnerFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/ivFinish"
+                android:background="@null"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/ivFinish"
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@mipmap/down" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+                </LinearLayout>
+
+              <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_lift_elevators"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioGroup
+            android:id="@+id/rgLift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passenger"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commercial"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Lift"
+                android:textSize="@dimen/_12sdp" />
+
+        </RadioGroup>
+
+                  <RadioGroup
+                      android:id="@+id/rgLift1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp">
+
+                      <RadioButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="No information available since property was closed at the time of survey"
+                          android:textSize="@dimen/_12sdp" />
+
+                      <RadioButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="No information available since survey couldn't be done from inside"
+                          android:textSize="@dimen/_12sdp" />
+
+
+                  </RadioGroup>
+
+                  <LinearLayout
+                      android:id="@+id/llLiftElevator"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:visibility="gone">
+                  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="i. Make"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLiftMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rectangle_corner">
+
+                <EditText
+                    android:id="@+id/etLiftMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textCapCharacters"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+                   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="ii. Capacity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLiftCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rectangle_corner">
+
+                <EditText
+                    android:id="@+id/etLiftCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textCapCharacters"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLiftCond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="iii. Condition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:id="@+id/rlLiftCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:minHeight="@dimen/_30sdp"
+                android:background="@drawable/rectangle_corner">
+
+                <Spinner
+                    android:id="@+id/spinnerLiftCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toLeftOf="@+id/ivLiftCondition"
+                    android:background="@null"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/ivLiftCondition"
+                    android:layout_width="@dimen/_11sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@mipmap/down" />
+            </RelativeLayout>
+        </LinearLayout>
+                  </LinearLayout>
+
+    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHVAC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c_HVAC_Systems"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <Spinner
+                            android:id="@+id/spinnerHvac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/llhvac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:background="@drawable/rectangle_corner">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="HVAC Systems"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="i. Make"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <EditText
+                                    android:id="@+id/etHVACMake"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:inputType="textCapCharacters"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="ii. Capacity"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <EditText
+                                    android:id="@+id/etHVACCapacity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:inputType="textCapCharacters"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tvhvacCond"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="iii. Condition"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlHVACCondition"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <Spinner
+                                    android:id="@+id/spinnerHvacCondition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@+id/ivHvacCondition"
+                                    android:background="@null"
+                                    android:scrollbars="none" />
+
+                                <ImageView
+                                    android:id="@+id/ivHvacCondition"
+                                    android:layout_width="@dimen/_11sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:src="@mipmap/down" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <!--                <LinearLayout-->
+                        <!--                    android:id="@+id/llDGSet"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:orientation="vertical"-->
+                        <!--                    android:visibility="gone"-->
+                        <!--                    android:background="@drawable/rectangle_corner">-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                        android:text="DG Set"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:textColor="@color/black"-->
+                        <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="i. Make"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGMake"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <EditText-->
+                        <!--                                android:id="@+id/etPBDGMake"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:inputType="textCapCharacters"-->
+                        <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="ii. Capacity"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGCapacity"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <EditText-->
+                        <!--                                android:id="@+id/etPBDGCapacity"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:inputType="textCapCharacters"-->
+                        <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/tvPbDGCond"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="iii. Condition"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGCondition"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <Spinner-->
+                        <!--                                android:id="@+id/spinnerPBDGCondition"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--                                android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:scrollbars="none" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:id="@+id/ivPBDGCondition"-->
+                        <!--                                android:layout_width="@dimen/_11sdp"-->
+                        <!--                                android:layout_height="@dimen/_12sdp"-->
+                        <!--                                android:layout_alignParentRight="true"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:layout_marginRight="@dimen/_15sdp"-->
+                        <!--                                android:src="@mipmap/down" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                </LinearLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPowerBackup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/d_power_backup"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <Spinner
+                            android:id="@+id/spinnerPB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/llPowerB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:background="@drawable/rectangle_corner">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="Power Backup"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="i. Make"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <EditText
+                                    android:id="@+id/etPowerMake"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:inputType="textCapCharacters"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="ii. Capacity"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <EditText
+                                    android:id="@+id/etPbCapacity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:inputType="textCapCharacters"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tvPbCondw"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="iii. Condition"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/_30sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rectangle_corner">
+
+                                <Spinner
+                                    android:id="@+id/spinnerPBCondition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toLeftOf="@+id/ivPbCondition"
+                                    android:background="@null"
+                                    android:scrollbars="none" />
+
+                                <ImageView
+                                    android:id="@+id/ivPbCondition"
+                                    android:layout_width="@dimen/_11sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:src="@mipmap/down" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+                        <!--                <LinearLayout-->
+                        <!--                    android:id="@+id/llDGSet"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_marginTop="10dp"-->
+                        <!--                    android:orientation="vertical"-->
+                        <!--                    android:visibility="gone"-->
+                        <!--                    android:background="@drawable/rectangle_corner">-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                        android:text="DG Set"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:textColor="@color/black"-->
+                        <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="i. Make"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGMake"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <EditText-->
+                        <!--                                android:id="@+id/etPBDGMake"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:inputType="textCapCharacters"-->
+                        <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="ii. Capacity"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGCapacity"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <EditText-->
+                        <!--                                android:id="@+id/etPBDGCapacity"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:inputType="textCapCharacters"-->
+                        <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--                        android:orientation="vertical">-->
+
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/tvPbDGCond"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="iii. Condition"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                        <RelativeLayout-->
+                        <!--                            android:id="@+id/rlPBDGCondition"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:minHeight="@dimen/_30sdp"-->
+                        <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                            android:background="@drawable/rectangle_corner">-->
+
+                        <!--                            <Spinner-->
+                        <!--                                android:id="@+id/spinnerPBDGCondition"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--                                android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+                        <!--                                android:background="@null"-->
+                        <!--                                android:scrollbars="none" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:id="@+id/ivPBDGCondition"-->
+                        <!--                                android:layout_width="@dimen/_11sdp"-->
+                        <!--                                android:layout_height="@dimen/_12sdp"-->
+                        <!--                                android:layout_alignParentRight="true"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:layout_marginRight="@dimen/_15sdp"-->
+                        <!--                                android:src="@mipmap/down" />-->
+                        <!--                        </RelativeLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                </LinearLayout>-->
+                        <!--                <LinearLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                    android:layout_marginTop="@dimen/_7sdp"-->
+                        <!--                    android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                    android:orientation="vertical">-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/tvPower"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="@string/d_power_backup"-->
+                        <!--                        android:textColor="@color/black"-->
+                        <!--                        android:textSize="@dimen/_14sdp" />-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/cbInverter"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                        android:text="Inverter"-->
+                        <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/cbDgSet"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                        android:text="DG Set"-->
+                        <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/cbNoPowerBackup"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                        android:text="No Power Backup"-->
+                        <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:id="@+id/llInverter"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:orientation="vertical"-->
+                        <!--                        android:visibility="gone"-->
+                        <!--                        android:background="@drawable/rectangle_corner">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="Inverter"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="i. Make"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBInverterMake"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <EditText-->
+                        <!--                                    android:id="@+id/etPBInverterMake"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:inputType="textCapCharacters"-->
+                        <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                            </RelativeLayout>-->
+
+                        <!--                        </LinearLayout>-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="ii. Capacity"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBInverterCapacity"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <EditText-->
+                        <!--                                    android:id="@+id/etPBInverterCapacity"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:inputType="textCapCharacters"-->
+                        <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                            </RelativeLayout>-->
+
+                        <!--                        </LinearLayout>-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tvPbCond"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="iii. Condition"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBInverterCondition"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <Spinner-->
+                        <!--                                    android:id="@+id/spinnerPBInverterCondition"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--                                    android:layout_toLeftOf="@+id/ivPBInverterCondition"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:scrollbars="none" />-->
+
+                        <!--                                <ImageView-->
+                        <!--                                    android:id="@+id/ivPBInverterCondition"-->
+                        <!--                                    android:layout_width="@dimen/_11sdp"-->
+                        <!--                                    android:layout_height="@dimen/_12sdp"-->
+                        <!--                                    android:layout_alignParentRight="true"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:layout_marginRight="@dimen/_15sdp"-->
+                        <!--                                    android:src="@mipmap/down" />-->
+                        <!--                            </RelativeLayout>-->
+                        <!--                        </LinearLayout>-->
+
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:id="@+id/llDGSet"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginTop="10dp"-->
+                        <!--                        android:orientation="vertical"-->
+                        <!--                        android:visibility="gone"-->
+                        <!--                        android:background="@drawable/rectangle_corner">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                            android:text="DG Set"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:textColor="@color/black"-->
+                        <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="i. Make"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBDGMake"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <EditText-->
+                        <!--                                    android:id="@+id/etPBDGMake"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:inputType="textCapCharacters"-->
+                        <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+                        <!--                            </RelativeLayout>-->
+                        <!--                        </LinearLayout>-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="ii. Capacity"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBDGCapacity"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <EditText-->
+                        <!--                                    android:id="@+id/etPBDGCapacity"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:inputType="textCapCharacters"-->
+                        <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                        <!--                                    android:textSize="@dimen/_12sdp" />-->
+                        <!--                            </RelativeLayout>-->
+                        <!--                        </LinearLayout>-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--                            android:orientation="vertical">-->
+
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tvPbDGCond"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                        <!--                                android:text="iii. Condition"-->
+                        <!--                                android:textColor="@color/black"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:id="@+id/rlPBDGCondition"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:minHeight="@dimen/_30sdp"-->
+                        <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                        <!--                                android:background="@drawable/rectangle_corner">-->
+
+                        <!--                                <Spinner-->
+                        <!--                                    android:id="@+id/spinnerPBDGCondition"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--                                    android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+                        <!--                                    android:background="@null"-->
+                        <!--                                    android:scrollbars="none" />-->
+
+                        <!--                                <ImageView-->
+                        <!--                                    android:id="@+id/ivPBDGCondition"-->
+                        <!--                                    android:layout_width="@dimen/_11sdp"-->
+                        <!--                                    android:layout_height="@dimen/_12sdp"-->
+                        <!--                                    android:layout_alignParentRight="true"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:layout_marginRight="@dimen/_15sdp"-->
+                        <!--                                    android:src="@mipmap/down" />-->
+                        <!--                            </RelativeLayout>-->
+                        <!--                        </LinearLayout>-->
+
+                        <!--                    </LinearLayout>-->
+
+                        <!--                </LinearLayout>-->
+
+                    </LinearLayout>
+                </LinearLayout>
+
+<!--            </LinearLayout>// gone.......................-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvPower"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/d_power_backup"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_14sdp" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cbInverter"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:text="Inverter"-->
+<!--                    android:textSize="@dimen/_12sdp" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cbDgSet"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:text="DG Set"-->
+<!--                    android:textSize="@dimen/_12sdp" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/cbNoPowerBackup"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:text="No Power Backup"-->
+<!--                    android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/llInverter"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:background="@drawable/rectangle_corner">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="Inverter"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="i. Make"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBInverterMake"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etPBInverterMake"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:background="@null"-->
+<!--                                android:inputType="textCapCharacters"-->
+<!--                                android:paddingLeft="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="ii. Capacity"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBInverterCapacity"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etPBInverterCapacity"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:background="@null"-->
+<!--                                android:inputType="textCapCharacters"-->
+<!--                                android:paddingLeft="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+
+<!--                        </RelativeLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvPbCond"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="iii. Condition"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBInverterCondition"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <Spinner-->
+<!--                                android:id="@+id/spinnerPBInverterCondition"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                                android:layout_toLeftOf="@+id/ivPBInverterCondition"-->
+<!--                                android:background="@null"-->
+<!--                                android:scrollbars="none" />-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/ivPBInverterCondition"-->
+<!--                                android:layout_width="@dimen/_11sdp"-->
+<!--                                android:layout_height="@dimen/_12sdp"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginRight="@dimen/_15sdp"-->
+<!--                                android:src="@mipmap/down" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/llDGSet"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:background="@drawable/rectangle_corner">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:text="DG Set"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="i. Make"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBDGMake"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etPBDGMake"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:background="@null"-->
+<!--                                android:inputType="textCapCharacters"-->
+<!--                                android:paddingLeft="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="ii. Capacity"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBDGCapacity"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <EditText-->
+<!--                                android:id="@+id/etPBDGCapacity"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:background="@null"-->
+<!--                                android:inputType="textCapCharacters"-->
+<!--                                android:paddingLeft="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                        android:orientation="vertical">-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvPbDGCond"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:text="iii. Condition"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        <RelativeLayout-->
+<!--                            android:id="@+id/rlPBDGCondition"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minHeight="@dimen/_30sdp"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:background="@drawable/rectangle_corner">-->
+
+<!--                            <Spinner-->
+<!--                                android:id="@+id/spinnerPBDGCondition"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                                android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+<!--                                android:background="@null"-->
+<!--                                android:scrollbars="none" />-->
+
+<!--                            <ImageView-->
+<!--                                android:id="@+id/ivPBDGCondition"-->
+<!--                                android:layout_width="@dimen/_11sdp"-->
+<!--                                android:layout_height="@dimen/_12sdp"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_centerVertical="true"-->
+<!--                                android:layout_marginRight="@dimen/_15sdp"-->
+<!--                                android:src="@mipmap/down" />-->
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_7sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvGard"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/e_garden_landscaping"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_14sdp" />-->
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/rgGarden"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp">-->
+
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Yes"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="No"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/beautiful"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/ordinary"-->
+<!--                        android:textSize="@dimen/_12sdp" />-->
+
+<!--                </RadioGroup>-->
+
+<!--            </LinearLayout>-->
+            </LinearLayout>//comment
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGardenland"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_garden_landscaping"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <Spinner
+                        android:id="@+id/spinnerGarden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Spinner>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/llGarden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/rectangle_corner">
+                    <CheckBox
+                        android:id="@+id/cbGarBeautiful"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beautiful"/>
+                    <CheckBox
+                        android:id="@+id/cbGarOrdinary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ordinary"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <!--                <LinearLayout-->
+                    <!--                    android:id="@+id/llDGSet"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="10dp"-->
+                    <!--                    android:orientation="vertical"-->
+                    <!--                    android:visibility="gone"-->
+                    <!--                    android:background="@drawable/rectangle_corner">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                        android:text="DG Set"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                        android:orientation="vertical">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                            android:text="i. Make"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:id="@+id/rlPBDGMake"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:minHeight="@dimen/_30sdp"-->
+                    <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                            android:background="@drawable/rectangle_corner">-->
+
+                    <!--                            <EditText-->
+                    <!--                                android:id="@+id/etPBDGMake"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_centerVertical="true"-->
+                    <!--                                android:background="@null"-->
+                    <!--                                android:inputType="textCapCharacters"-->
+                    <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+                    <!--                        </RelativeLayout>-->
+                    <!--                    </LinearLayout>-->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                        android:orientation="vertical">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                            android:text="ii. Capacity"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:id="@+id/rlPBDGCapacity"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:minHeight="@dimen/_30sdp"-->
+                    <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                            android:background="@drawable/rectangle_corner">-->
+
+                    <!--                            <EditText-->
+                    <!--                                android:id="@+id/etPBDGCapacity"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_centerVertical="true"-->
+                    <!--                                android:background="@null"-->
+                    <!--                                android:inputType="textCapCharacters"-->
+                    <!--                                android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+                    <!--                        </RelativeLayout>-->
+                    <!--                    </LinearLayout>-->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginBottom="@dimen/_5sdp"-->
+                    <!--                        android:orientation="vertical">-->
+
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/tvPbDGCond"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                            android:text="iii. Condition"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:id="@+id/rlPBDGCondition"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:minHeight="@dimen/_30sdp"-->
+                    <!--                            android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                            android:background="@drawable/rectangle_corner">-->
+
+                    <!--                            <Spinner-->
+                    <!--                                android:id="@+id/spinnerPBDGCondition"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_centerVertical="true"-->
+                    <!--                                android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--                                android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+                    <!--                                android:background="@null"-->
+                    <!--                                android:scrollbars="none" />-->
+
+                    <!--                            <ImageView-->
+                    <!--                                android:id="@+id/ivPBDGCondition"-->
+                    <!--                                android:layout_width="@dimen/_11sdp"-->
+                    <!--                                android:layout_height="@dimen/_12sdp"-->
+                    <!--                                android:layout_alignParentRight="true"-->
+                    <!--                                android:layout_centerVertical="true"-->
+                    <!--                                android:layout_marginRight="@dimen/_15sdp"-->
+                    <!--                                android:src="@mipmap/down" />-->
+                    <!--                        </RelativeLayout>-->
+                    <!--                    </LinearLayout>-->
+
+                    <!--                </LinearLayout>-->
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                    android:layout_marginTop="@dimen/_7sdp"-->
+                    <!--                    android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                    android:orientation="vertical">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/tvPower"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="@string/d_power_backup"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="@dimen/_14sdp" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/cbInverter"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                        android:text="Inverter"-->
+                    <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/cbDgSet"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                        android:text="DG Set"-->
+                    <!--                        android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                    <CheckBox-->
+                    <!--                        android:id="@+id/cbNoPowerBackup"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                        android:text="No Power Backup"-->
+                    <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:id="@+id/llInverter"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        android:background="@drawable/rectangle_corner">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                            android:text="Inverter"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="i. Make"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBInverterMake"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <EditText-->
+                    <!--                                    android:id="@+id/etPBInverterMake"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:inputType="textCapCharacters"-->
+                    <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                            </RelativeLayout>-->
+
+                    <!--                        </LinearLayout>-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="ii. Capacity"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBInverterCapacity"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <EditText-->
+                    <!--                                    android:id="@+id/etPBInverterCapacity"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:inputType="textCapCharacters"-->
+                    <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                    android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                            </RelativeLayout>-->
+
+                    <!--                        </LinearLayout>-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/tvPbCond"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="iii. Condition"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBInverterCondition"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <Spinner-->
+                    <!--                                    android:id="@+id/spinnerPBInverterCondition"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--                                    android:layout_toLeftOf="@+id/ivPBInverterCondition"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:scrollbars="none" />-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/ivPBInverterCondition"-->
+                    <!--                                    android:layout_width="@dimen/_11sdp"-->
+                    <!--                                    android:layout_height="@dimen/_12sdp"-->
+                    <!--                                    android:layout_alignParentRight="true"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:layout_marginRight="@dimen/_15sdp"-->
+                    <!--                                    android:src="@mipmap/down" />-->
+                    <!--                            </RelativeLayout>-->
+                    <!--                        </LinearLayout>-->
+
+                    <!--                    </LinearLayout>-->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:id="@+id/llDGSet"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        android:background="@drawable/rectangle_corner">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                            android:text="DG Set"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:textColor="@color/black"-->
+                    <!--                            android:textSize="@dimen/_12sdp" />-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="i. Make"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBDGMake"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <EditText-->
+                    <!--                                    android:id="@+id/etPBDGMake"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:inputType="textCapCharacters"-->
+                    <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                    android:textSize="@dimen/_12sdp" />-->
+                    <!--                            </RelativeLayout>-->
+                    <!--                        </LinearLayout>-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="ii. Capacity"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBDGCapacity"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <EditText-->
+                    <!--                                    android:id="@+id/etPBDGCapacity"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:inputType="textCapCharacters"-->
+                    <!--                                    android:paddingLeft="@dimen/_5sdp"-->
+                    <!--                                    android:textSize="@dimen/_12sdp" />-->
+                    <!--                            </RelativeLayout>-->
+                    <!--                        </LinearLayout>-->
+
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_marginLeft="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginRight="@dimen/_10sdp"-->
+                    <!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+                    <!--                            android:orientation="vertical">-->
+
+
+                    <!--                            <TextView-->
+                    <!--                                android:id="@+id/tvPbDGCond"-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--                                android:text="iii. Condition"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+                    <!--                            <RelativeLayout-->
+                    <!--                                android:id="@+id/rlPBDGCondition"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:minHeight="@dimen/_30sdp"-->
+                    <!--                                android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--                                android:background="@drawable/rectangle_corner">-->
+
+                    <!--                                <Spinner-->
+                    <!--                                    android:id="@+id/spinnerPBDGCondition"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--                                    android:layout_toLeftOf="@+id/ivPBDGCondition"-->
+                    <!--                                    android:background="@null"-->
+                    <!--                                    android:scrollbars="none" />-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/ivPBDGCondition"-->
+                    <!--                                    android:layout_width="@dimen/_11sdp"-->
+                    <!--                                    android:layout_height="@dimen/_12sdp"-->
+                    <!--                                    android:layout_alignParentRight="true"-->
+                    <!--                                    android:layout_centerVertical="true"-->
+                    <!--                                    android:layout_marginRight="@dimen/_15sdp"-->
+                    <!--                                    android:src="@mipmap/down" />-->
+                    <!--                            </RelativeLayout>-->
+                    <!--                        </LinearLayout>-->
+
+                    <!--                    </LinearLayout>-->
+
+                    <!--                </LinearLayout>-->
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvPark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/f_parking_facilities"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:id="@+id/rgParking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available_within_the_property"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/llAvailableWithin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/rgAvailableWithin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="On Ground"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="In Basement"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="On stilt"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not available within the property"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/llNotAvailableWithin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RadioGroup
+                            android:id="@+id/rgNotAvailableWithin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="On Ground"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Acute parking problem"
+                                android:textSize="@dimen/_12sdp" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_security_hut"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <Spinner
+                        android:id="@+id/spinnerSecurityHut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/ivSecurityHut"
+                        android:background="@null"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/ivSecurityHut"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@mipmap/down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llSecurityDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlSecurityDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etSecurityHutDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvPav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/h_pavements_internal_roads"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <Spinner
+                        android:id="@+id/spinnerPavements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toLeftOf="@+id/ivPavements"
+                        android:background="@null"
+                        android:scrollbars="none" />
+
+                    <ImageView
+                        android:id="@+id/ivPavements"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@mipmap/down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPavementDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlPavementDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rectangle_corner">
+
+                        <EditText
+                            android:id="@+id/etPavementsDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="h. Special Comments (if any)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rectangle_corner">
+
+                    <EditText
+                        android:id="@+id/etSpecialComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvPrevious"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/grey_bg"
+            android:gravity="center"
+            android:text="PREVIOUS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@color/app_header"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

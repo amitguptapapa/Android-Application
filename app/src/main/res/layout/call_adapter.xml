@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <ImageView
+        android:id="@+id/iv_phn"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@mipmap/blue_phn" />
+
+    <ImageView
+        android:id="@+id/iv_phn2"
+        android:visibility="gone"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:elevation="@dimen/_10sdp"
+        android:src="@mipmap/blue_phn"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"/>
+
+  <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/iv_phn"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/greyy" />-->
+</RelativeLayout>

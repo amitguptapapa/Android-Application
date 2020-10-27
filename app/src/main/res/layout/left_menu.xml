@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/app_header"
+            android:id="@+id/rl_header_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp">
+
+            <RelativeLayout
+                android:id="@+id/rr_header"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    app:srcCompat="@drawable/ic_user"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_85sdp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_below="@id/rr_header"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+            <TextView
+                android:id="@+id/tv_mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_below="@id/tv_name"
+                android:text="Mobile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/greyy" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/left_menu_main" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "389397308581",
+    "firebase_url": "https://vis-app.firebaseio.com",
+    "project_id": "vis-app",
+    "storage_bucket": "vis-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389397308581:android:d6de9b344e761d83",
+        "android_client_info": {
+          "package_name": "com.vis.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389397308581-d5s6l881vtrvqa1epl2oha5ek1eroe2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vis.android",
+            "certificate_hash": "563a143d41b4afcf2cf986dfad1cb78d2222f5bb"
+          }
+        },
+        {
+          "client_id": "389397308581-fhgvbgacqa0jgian96juopu0smr5nif0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgS2TckMN-TYvtCsE-HfHqcVA6x7XC59Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389397308581-fhgvbgacqa0jgian96juopu0smr5nif0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

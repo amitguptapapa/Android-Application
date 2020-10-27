@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.General.DrawPlotActivity">
+
+    <include
+        android:id="@+id/rr_header"
+        layout="@layout/form_header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp" />
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:id="@+id/signaturePad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rr_header"
+        android:layout_above="@+id/llFooter"
+        app:penColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvClear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/grey_bg"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/clear"
+            android:textAllCaps="true"
+            android:layout_marginRight="@dimen/_1sdp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvDone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/app_header"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/done"
+            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/_1sdp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vis.android.Activities.Dashboard">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/h1"
+                android:background="@color/app_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_sidemenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/img_menu"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@mipmap/menu" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rl_sidemenu"
+                    android:text="Dashboard"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"/>
+                <RelativeLayout
+                    android:id="@+id/rl_filter"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_filter"
+                        android:src="@mipmap/filter"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp" />
+                    <ImageView
+                        android:padding="@dimen/_5sdp"
+                        android:src="@mipmap/notification"
+                        android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/h1">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+        <!-- Framelayout to display Fragments -->
+
+        <!-- ***************************** side Menu *********************************-->
+
+        <RelativeLayout
+            android:id="@+id/side_list"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:clickable="false">
+
+            <include layout="@layout/left_menu" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

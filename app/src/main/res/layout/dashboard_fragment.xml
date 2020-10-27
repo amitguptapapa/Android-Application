@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pullToRefresh">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rlCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlNewCases"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/tvNewCases"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/new_cases"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/viewLineNewCases"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_below="@+id/tvNewCases"
+                                android:background="@color/app_header" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/greyLight" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rlAcceptedCases"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/tvAcceptedCases"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/accepted_cases"
+                                android:textAllCaps="true"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <View
+                                android:id="@+id/viewLineAcceptedCases"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_below="@+id/tvAcceptedCases"
+                                android:background="@color/app_header"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/greyLight" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlScheduledCases"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true">
+
+                            <TextView
+                                android:id="@+id/tvScheduledCases"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/scheduled_cases"
+                                android:textAllCaps="true"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <View
+                                android:id="@+id/viewLineScheduledCases"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_below="@+id/tvScheduledCases"
+                                android:background="@color/app_header"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_below="@+id/llCategory"
+                        android:background="@color/greyLight" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:visibility="gone"
+                    android:id="@+id/lv_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rlCategory"
+                    android:layout_margin="@dimen/_7sdp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="10.0sp"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollbars="none"></ListView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_margin="@dimen/_7sdp"
+                    android:layout_below="@+id/rlCategory"
+                    android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

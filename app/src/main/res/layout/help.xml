@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_help"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:text="How can we help you?"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:textSize="@dimen/_14sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/rl_ques"
+        android:layout_below="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:background="@color/light_grey"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center_vertical"
+            android:text="Property Related?"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp" />
+
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_ans"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:text="@string/about_us"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/rl_ques"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
